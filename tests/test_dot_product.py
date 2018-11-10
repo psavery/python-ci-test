@@ -7,6 +7,7 @@ from python_ci_test.dot_product import dot_product
 
 import pytest
 
+
 def test_dot_product():
     list_a = [3, 4, 5]
     list_b = [5, 6, 7]
