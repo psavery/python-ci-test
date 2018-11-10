@@ -15,18 +15,26 @@ before_install:
   - ulimit -a
 
 install:
-  - pip install pytest pytest-cov
+  - pip install pytest pytest-cov flake8
 
 before_script:
   - python -V
 
 script:
+  # Test style with flake8
+  - flake8 . --count --show-source --statistics
+
+  # Install source
   - pip install -e .
+
+  # Test runtime with pytest and create report for codecov
   - py.test -v --cov=./
 
 after_success:
+  # Install and run codecov
   - pip install codecov
   - codecov
 
 notifications:
+  # Don't bother me
   email: false
