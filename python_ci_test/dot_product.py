@@ -16,7 +16,7 @@ def dot_product(list_a, list_b):
     """
 
     if len(list_a) != len(list_b):
-        raise ValueError
+        raise ValueError('The lists must be of the same length')
 
     sum = 0
     for i in range(len(list_a)):
