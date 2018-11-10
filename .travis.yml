@@ -22,7 +22,7 @@ before_script:
 
 script:
   - pip install -e .
-  - pytest -v --cov=./
+  - py.test -v --cov=./
 
 after_success:
   - pip install codecov
