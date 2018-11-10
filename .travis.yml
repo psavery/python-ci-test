@@ -5,8 +5,8 @@ sudo: false
 
 python:
   - "2.7"
-  - "3.3"
-  - "3.6"
+  - "3.4"
+  - "3.7"
 
 before_install:
   - uname -a
