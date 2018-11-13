@@ -1,4 +1,5 @@
 language: python
+dist: xenial
 
 # Run jobs on container-based infrastructure, can be overridden per job
 sudo: false
