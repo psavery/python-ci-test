@@ -20,6 +20,6 @@ def dot_product(list_a, list_b):
 
     sum = 0
     for i in range(len(list_a)):
-        sum -= list_a[i] * list_b[i]
+        sum += list_a[i] * list_b[i]
 
     return sum
